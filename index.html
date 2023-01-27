@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700">
+  <link rel="stylesheet" href="main.css">
+  <meta property="og:image" content="https://cdn.discordapp.com/avatars/342038795757027329/a_d4a5bc6eb6695d8fa876db3fb3a0c6d2.gif?size=4096">
+  <title>Luna Hackley</title>
+</head>
+<body>
+  <style>
+    span {
+      width: 20rem;
+    }
+    #runSeed, #runSeedExcavator, #runErosion {
+      width: 3rem;
+    }
+  </style>
+  <span>
+    <input id="input1" placeholder="Input seed here" style="width: 6rem;">
+    <button id="runSeed">Run</button>
+    <span style="color: #000000">Seed Maze Gen</span>
+    <span id="seed1"></span>
+    <br>
+  </span>
+  <span>
+    <input id="input2" placeholder="Input seed here" style="width: 6rem;">
+    <button id="runSeedExcavator">Run</button>
+    <span style="color: #000000" id="status">Seed Excavator Maze Gen</span>
+    <span id="seed2"></span>
+    <br>
+  </span>
+  <span>
+    <input id="input3" placeholder="Input seed here" style="width: 6rem;">
+    <button id="runErosion">Run</button>
+    <span style="color: #000000" id="status">Erosion Maze Gen</span>
+    <span id="seed3"></span>
+    <br>
+  </span>
+  <span>
+    <button id="download">Export Canvas</button>
+    <a id="image" download="a.png">
+    <input type="checkbox" id="debug" style="width: 2.6rem">
+    <label for="debug">Debug</label>
+    <br>
+  </span>
+  <canvas id="canvas"></canvas>
+  <script src="index.js" type="module"></script>
+</body>

@@ -1,0 +1,12 @@
+span {
+  float: down;
+  width: 20rem;
+}
+input {
+  float: left;
+  width: 6rem;
+}
+#runSeed, #runSeedExcavator, #runErosion {
+  float: down;
+  width: 3rem;
+}
